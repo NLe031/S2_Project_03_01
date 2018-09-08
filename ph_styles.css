@@ -30,7 +30,7 @@
    Filename: ph_styles.css
 
 */
-/* Here the background color for the document and body were defined and the header, paragraph, and address had font and margin and padding added to them. */
+/* Here the background color for the document and body were defined and the header, paragraph, and address had font and margin and padding added to them. Changed order link to a different color. */
 /* Structural Styles */
 html {
     background-color: hsl(91, 8%, 56%);
@@ -48,6 +48,16 @@ header {
 p {
     margin: 0px;
     padding: 5px 25px 25px 25px;
+}
+
+p a:link,
+p a:visited {
+    text-decoration: none;
+    color: rgb(248, 110, 230);
+}
+
+p a:hover {
+    color: rgba(184, 37, 127, 0.7);
 }
 
 body>p {
@@ -75,7 +85,7 @@ nav a:link,
 nav a:visited {
     color: white;
     text-decoration: none;
-    background-color: hsla(0, 0%, 42%, .4),
+    background-color: hsla(0, 0%, 42%, .4);
 }
 
 nav a:active,
@@ -84,8 +94,9 @@ nav a:hover {
     background-color: hsla(0, 0%, 42%, .7);
 }
 
+/* The code in this section changes the color for each play to a different color and also changes the font for each h1 tag for each play. */
 /* Section Styles */
-section.paybill h1 {
+section.playbill h1 {
     font-size: 3em;
     font-weight: normal;
     margin: 0px;
@@ -96,16 +107,44 @@ section#play1 {
     background-color: hsl(240, 100%, 88%);
 }
 
+section#play1 h1 {
+    font-family: champagne, cursive;
+}
+
 section#play2 {
     background-color: hsl(25, 88%, 73%)
+}
+
+section#play2 h1 {
+    font-family: Grunge, 'Times New Roman', Times, serif;
 }
 
 section#play3 {
     background-color: hsl(0, 100%, 75%);
 }
 
+section#play3 {
+    font-family: Impact, Charcoal, sans-serif
+}
+
 section#play4 {
     background-color: hsl(296, 86%, 86%);
 }
 
+section#play4 {
+    font-family: Dobkin, cursive;
+}
+
+/* Changed the font size and color for dt and changed the font size and the margin for dd. */
 /* Description List Styles */
+dt {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, .4);
+}
+
+dd {
+    font-size: 1.3em;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
