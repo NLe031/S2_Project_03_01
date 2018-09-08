@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* The font faces for the play sections. */
 @font-face {
     font-family: champagne;
     src: url('cac_champagne.woff') format('woff'),
